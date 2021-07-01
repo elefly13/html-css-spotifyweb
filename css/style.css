@@ -4,29 +4,47 @@
     box-sizing: border-box;
 }
 /* common */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 .clearfix::after {
     content: "";
     display: table;
     clear: both;
 }
+.float {
+    float: left;
+}
 /* fine common */
 .container {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
 }
 /* barra sx navigazione */
 .box-nav {
     position: relative;
-    float: left;
     width: 230px;
     height: 90vh;
     background-color: yellow;
 }
+/* sezione logo  */
 .box-nav .logo {
     width: 230px;
     height: 10vh;
     background-color: honeydew;
 }
+.logo .icona-logo {
+    width: 70px;
+    height: 10vh;
+    background-color: indigo;
+}
+.logo .nome-logo {
+    width: 130px;
+    height: 10vh;
+    background-color: lemonchiffon;
+}
+
+/* fine sezione logo  */
 .box-nav .menu {
     width: 230px;
     height: 150px;
@@ -48,7 +66,6 @@
 /* fine barra sx navigazione */
 /* sezione main  */
 .box-main {
-    float: left;
     width: calc(100% - 230px);
     height: 90vh;
     background-color: red;
@@ -56,18 +73,34 @@
 /* fine sezione main  */
 /* sezione footer  */
 .box-footer {
-    width: 100vw;
-    height: 10vh;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 599;
+    width: 100%;
+    height: 70px;
     background-color: green;
 }
 /* fine sezione footer  */
 /* inizio Media  */
 @media screen and (max-width: 600px) {
     .box-nav {
+        min-height: 100%;
+    }
+    .box-nav,
+    .box-nav .logo,
+    .box-nav .menu, 
+    .box-nav .playlist,
+    .box-nav .nav-bottom {
         width: 70px;
     }
     .box-main {
         width: calc(100% - 70px) ;
     }
+
+    .nome-logo {
+        display: none;
+    }
+
 }
 /* fine Media  */
