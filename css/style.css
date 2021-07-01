@@ -16,25 +16,28 @@
 }
 .box-nav {
     float: left;
-    width: 20%;
-    height: 80vh;
+    width: 230px;
+    height: 85vh;
     background-color: yellow;
 }
 .box-main {
     float: left;
-    width: 80%;
-    height: 80vh;
+    width: calc(100% - 230px);
+    height: 85vh;
     background-color: red;
 }
 .box-footer {
-    width: 100%;
-    height: 20vh;
+    width: 100vw;
+    height: 15vh;
     background-color: green;
 }
 /* inizio Media  */
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
     .box-nav {
-        min-width: 10%;
+        width: 70px;
+    }
+    .box-main {
+        width: calc(100% - 70px) ;
     }
 }
 /* fine Media  */
