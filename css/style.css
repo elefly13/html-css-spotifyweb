@@ -14,23 +14,53 @@
     width: 100%;
     height: 100vh;
 }
+/* barra sx navigazione */
 .box-nav {
+    position: relative;
     float: left;
     width: 230px;
-    height: 85vh;
+    height: 90vh;
     background-color: yellow;
 }
+.box-nav .logo {
+    width: 230px;
+    height: 10vh;
+    background-color: honeydew;
+}
+.box-nav .menu {
+    width: 230px;
+    height: 150px;
+    background-color: lawngreen;
+}
+.box-nav .playlist {
+    width: 230px;
+    height: 250px;
+    background-color: lightpink;
+}
+.box-nav .nav-bottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 230px;
+    height: 50px;
+    background-color: gray;
+}
+/* fine barra sx navigazione */
+/* sezione main  */
 .box-main {
     float: left;
     width: calc(100% - 230px);
-    height: 85vh;
+    height: 90vh;
     background-color: red;
 }
+/* fine sezione main  */
+/* sezione footer  */
 .box-footer {
     width: 100vw;
-    height: 15vh;
+    height: 10vh;
     background-color: green;
 }
+/* fine sezione footer  */
 /* inizio Media  */
 @media screen and (max-width: 600px) {
     .box-nav {
