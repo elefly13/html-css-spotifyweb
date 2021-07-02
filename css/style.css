@@ -5,7 +5,8 @@
 }
 /* common */
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
 }
 .clearfix::after {
     content: "";
@@ -22,47 +23,149 @@ body {
 }
 /* barra sx navigazione */
 .box-nav {
-    position: relative;
+   
     width: 230px;
-    height: 90vh;
-    background-color: yellow;
+    height: calc(100vh - 70px);
+    background-color: black;   
+}
+.box-nav-top {
+    width: 230px;
+    height: calc(100% - 70px);
+    min-height: 280px;
 }
 /* sezione logo  */
 .box-nav .logo {
     width: 230px;
-    height: 10vh;
-    background-color: honeydew;
+    height: 70px;
+    padding: 20px;   
 }
-.logo .icona-logo {
-    width: 70px;
-    height: 10vh;
-    background-color: indigo;
-}
-.logo .nome-logo {
-    width: 130px;
-    height: 10vh;
-    background-color: lemonchiffon;
+.box-nav .logo img {
+    width: 70%;
 }
 
 /* fine sezione logo  */
+/* sezione menu  */
 .box-nav .menu {
     width: 230px;
-    height: 150px;
-    background-color: lawngreen;
+    
 }
+.row-menu {
+    padding-left: 16px;
+    width: 100%;
+    height: 30px;
+    margin-left: 3px;
+    margin-bottom: 5px;
+}
+.row-menu:hover {
+    border-left: 2px solid lightgreen;
+}
+.menu .row-menu a:hover{
+    font-weight: 700;
+    color: white;
+}
+.row-menu img {
+    width: 30px;
+    height: 30px;
+    padding-right: 5px;
+}
+.row-menu a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: gray;
+    font-size: 12px;   
+}
+/* fine sezione menu  */
+/* sezione playlist  */
 .box-nav .playlist {
     width: 230px;
-    height: 250px;
-    background-color: lightpink;
+    padding: 20px;
 }
-.box-nav .nav-bottom {
-    position: absolute;
-    left: 0;
-    bottom: 0;
+.playlist h4 {
+    margin-bottom: 10px;
+}
+.playlist a {
+    display: flex;
+    align-items: center;
+}
+#crea-playlist {
+    text-decoration: none;
+    color: gray;
+    font-weight: 500;
+}
+#crea-playlist::before {
+    content: "+";
+    background-color: lightgrey;
+    color: black;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 0 10px;
+    margin-right: 5px;
+}
+#crea-playlist::before:hover {
+    background-color: white;
+}
+#crea-playlist:hover {
+    color: white;
+}
+.lista-playlist {
     width: 230px;
-    height: 50px;
-    background-color: gray;
+    min-height: 150px;
+    padding: 0 20px;
+    overflow-y: hidden;
 }
+.lista-playlist ul {
+    list-style-type: none;
+}
+.nome-playlist {
+    padding: 5px 0;
+}
+.nome-playlist a{ 
+    text-decoration: none;
+    font-size: 12px;
+    color: gray;
+}
+.nome-playlist a:hover {
+    font-weight: 700;
+    color: white;
+}
+/* fine sezione playlist  */
+/* inizio sezione botton navigazione */
+.box-nav .nav-bottom {
+    width: 230px;
+    height: 70px;
+    padding: 0 20px;
+}
+.installa a  {
+    text-decoration: none;
+    color: gray;
+    font-size: 12px;
+    font-weight: 500;
+}
+.installa i {
+    margin-right: 5px;
+}
+.utente {
+    width: 100%;
+    height: 50px;
+    border-top: 1px solid gray;
+    margin-top: 5px;
+}
+.utente img {
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.utente a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+}
+/* fine sezione botton navigazione */
 /* fine barra sx navigazione */
 /* sezione main  */
 .box-main {
@@ -84,9 +187,9 @@ body {
 /* fine sezione footer  */
 /* inizio Media  */
 @media screen and (max-width: 600px) {
-    .box-nav {
+    /* .box-nav {
         min-height: 100%;
-    }
+    } */
     .box-nav,
     .box-nav .logo,
     .box-nav .menu, 
@@ -98,7 +201,8 @@ body {
         width: calc(100% - 70px) ;
     }
 
-    .nome-logo {
+    .nome-logo,
+    .row-menu a:last-child {
         display: none;
     }
 

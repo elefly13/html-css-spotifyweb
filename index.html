@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>SpotifyWeb</title>
 </head>
@@ -12,23 +16,54 @@
         <div class="box-nav-main clearfix">
             <!-- INIZIO BARRA SX NAVIGAZIONE -->
             <nav class="box-nav float">
-                <div class="logo">
-                    <div class="icona-logo float"></div>
-                    <div class="nome-logo float">Spotify</div>
-
+                <div class="box-nav-top">
+                    <div class="logo">
+                        <div class="icona-logo">
+                            <img src="img/logo.svg" alt="logo Spotify">
+                        </div>
+                    </div>
+                    <!-- navigazione menu  -->
+                    <div class="menu">
+                        <div class="row-menu">
+                            <a href="#"><span class="icona"><img src="img/home.svg" alt=""></span><span>Home</span></a>
+                        </div>
+                        <div class="row-menu">
+                            <a href="#"><span class="icona"><img src="img/search.svg" alt=""></span><span>Cerca</span></a>
+                        </div>
+                        <div class="row-menu">
+                            <a href="#"><span class="icona"><img src="img/libreria.svg" alt=""></span><span>La tua libreria</span></a>
+                        </div>
+                    </div>
+                    <!-- fine navigazione menu -->
+                    <!-- inizio playlist  -->
+                    <div class="playlist">
+                        <h4>PLAYLIST</h4>
+                        <a href="#" id="crea-playlist">Crea Playlist</a>
+                    </div>
+                    <div class="lista-playlist">
+                        <ul>
+                            <li class="nome-playlist"><a href="#">Nome playlist</a></li>
+                            <li class="nome-playlist"><a href="#">Nome playlist</a></li>
+                            <li class="nome-playlist"><a href="#">Nome playlist</a></li>
+                            <li class="nome-playlist"><a href="#">Nome playlist</a></li>
+                            <li class="nome-playlist"><a href="#">Nome playlist</a></li>
+                            <li class="nome-playlist"><a href="#">Nome playlist</a></li>
+                            <li class="nome-playlist"><a href="#">Nome playlist</a></li>
+                        </ul>
+                    </div>
+                    <!-- fine playlist  -->
                 </div>
-                <div class="menu">menu
-                    
-
+               <!-- fine navigazione top  -->
+               <!-- inizio navigazione bottom  -->
+                <div class="nav-bottom">
+                    <div class="installa">
+                        <a href="#"><span><i class="far fa-arrow-alt-circle-down"></i></span><span>Installa app</span></a>
+                    </div>
+                    <div class="utente">
+                        <a href="#"><span><img src="img/profile.svg" alt="user profile"></span><span>John Doe</span></a>
+                    </div>
                 </div>
-                <div class="playlist">PLAYLIST
-
-                </div>
-                <div class="nav-bottom">FOOT NAV
-
-                </div>
-
-
+                <!-- fine navigazione bottom  -->
             </nav>
             <!-- FINE BARRA SX NAVIGAZIONE -->
             <!-- INIZIO MAIN  -->
