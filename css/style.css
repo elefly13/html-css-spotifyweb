@@ -185,19 +185,50 @@ body {
     z-index: 599;
     width: 100%;
     height: 70px;
-    background-color: green;
+    background-color: rgb(50, 50, 50);
 }
 .footer-sx,
 .footer-dx {
-    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 230px;
     height: 70px;
-    background-color: hotpink;
+    padding: 10px;
 }
 .footer-centrale {
     width: 35%;
     height: 70px;
     background-color: lavenderblush;
 }
+/* footer sx  */
+.disco img {
+    width: 35px;
+    height: 35px;
+}
+.nome-brano p {
+    font-size: 10px;
+    color: gray;
+}
+.nome-brano {
+    margin-right: 50px;
+}
+/* fine footer sx  */
+/* footer dx  */
+.riga-volume{
+    width: 100px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: gray;
+}
+.intensita-volume {
+    width: 40px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: lightgray;
+}
+/* fine footer dx  */
+
 
 /* fine sezione footer  */
 /* inizio Media  */
