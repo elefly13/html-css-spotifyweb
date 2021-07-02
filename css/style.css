@@ -18,15 +18,15 @@ body {
 }
 /* fine common */
 .container {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 }
 /* barra sx navigazione */
 .box-nav {
-   
     width: 230px;
     height: calc(100vh - 70px);
-    background-color: black;   
+    background-color: black; 
+    min-height: 380px;  
 }
 .box-nav-top {
     width: 230px;
@@ -110,9 +110,10 @@ body {
 }
 .lista-playlist {
     width: 230px;
-    min-height: 150px;
+    height: 350px;
+    min-height: 200px;
     padding: 0 20px;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 }
 .lista-playlist ul {
     list-style-type: none;
@@ -170,13 +171,15 @@ body {
 /* sezione main  */
 .box-main {
     width: calc(100% - 230px);
-    height: 90vh;
+    height: 789px;
     background-color: red;
 }
 /* fine sezione main  */
 /* sezione footer  */
 .box-footer {
     position: fixed;
+    display: flex;
+    justify-content: space-between;
     left: 0;
     bottom: 0;
     z-index: 599;
@@ -184,6 +187,18 @@ body {
     height: 70px;
     background-color: green;
 }
+.footer-sx,
+.footer-dx {
+    width: 20%;
+    height: 70px;
+    background-color: hotpink;
+}
+.footer-centrale {
+    width: 35%;
+    height: 70px;
+    background-color: lavenderblush;
+}
+
 /* fine sezione footer  */
 /* inizio Media  */
 @media screen and (max-width: 600px) {
