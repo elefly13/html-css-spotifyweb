@@ -199,7 +199,7 @@ body {
 .footer-centrale {
     width: 35%;
     height: 70px;
-    background-color: lavenderblush;
+    padding: 15px;
 }
 /* footer sx  */
 .disco img {
@@ -214,6 +214,29 @@ body {
     margin-right: 50px;
 }
 /* fine footer sx  */
+/* footer centrale  */
+.footer-centrale .riga-volume {
+    width: 70%;
+    height: 6px;
+    border-radius: 3px;
+    background-color: gray;
+}
+.icone-centrali-foot {
+    text-align: center;
+}
+.icone-centrali-foot i {
+    padding: 5px;
+}
+.volume-centrale {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.volume-centrale span {
+    font-size: 12px;
+}
+
+/* fine footer centrale  */
 /* footer dx  */
 .riga-volume{
     width: 100px;
