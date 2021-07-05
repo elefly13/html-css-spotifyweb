@@ -19,26 +19,32 @@
                 <div class="box-nav-top">
                     <div class="logo">
                         <div class="icona-logo">
-                            <img src="img/logo.svg" alt="logo Spotify">
+                            <img src="img/logo.svg" alt="logo Spotify" id="nome-logo">
+                        </div>
+                        <div class="logo-small">
+                            <img src="img/logo-small.svg" alt="logo-icona">
                         </div>
                     </div>
                     <!-- navigazione menu  -->
                     <div class="menu">
                         <div class="row-menu">
-                            <a href="#"><span class="icona"><img src="img/home.svg" alt=""></span><span>Home</span></a>
+                            <a href="#"><span><img src="img/home.svg" alt=""></span><span>Home</span></a>
                         </div>
+                        <a href="#"><span class="icona"><img src="img/home.svg" alt=""></a>
                         <div class="row-menu">
-                            <a href="#"><span class="icona"><img src="img/search.svg" alt=""></span><span>Cerca</span></a>
+                            <a href="#"><span ><img src="img/search.svg" alt=""></span><span>Cerca</span></a>
                         </div>
+                        <a href="#"><span class="icona"><img src="img/search.svg" alt=""></a>
                         <div class="row-menu">
-                            <a href="#"><span class="icona"><img src="img/libreria.svg" alt=""></span><span>La tua libreria</span></a>
+                            <a href="#"><span><img src="img/libreria.svg" alt=""></span><span>La tua libreria</span></a>
                         </div>
+                        <a href="#"><span class="icona"><img src="img/libreria.svg" alt=""></a>
                     </div>
                     <!-- fine navigazione menu -->
                     <!-- inizio playlist  -->
                     <div class="playlist">
                         <h4>PLAYLIST</h4>
-                        <a href="#" id="crea-playlist">Crea Playlist</a>
+                        <a href="#" id="crea-playlist"><span>Crea Playlist</span></a>
                     </div>
                     <div class="lista-playlist">
                         <ul>
@@ -59,9 +65,17 @@
                     <div class="installa">
                         <a href="#"><span><i class="far fa-arrow-alt-circle-down"></i></span><span>Installa app</span></a>
                     </div>
+                   
                     <div class="utente">
-                        <a href="#"> <img src="img/profile.svg" alt=""><span>John Doe</span></a>
+                        <a href="#"> 
+                            <div class="user-avatar">
+                                <img src="img/profile.svg" alt="">
+                            </div>
+                            <span id="nome-user">John Doe</span>
+                        </a>
                     </div>
+                    
+                    
                 </div>
                 <!-- fine navigazione bottom  -->
             </nav>
@@ -89,32 +103,62 @@
                     <h3>Recently Played</h3>
                     <div class="box-played">
                         <div class="copertina">
-                            <img src="img/metal_lifting.jpg" alt="metal">
+                            <div class="box-img">
+                                <div class="layover">
+                                    <a href="#"><i class="far fa-play-circle"></i></a>
+                                </div>
+                                <img src="img/metal_lifting.jpg" alt="metal">
+                            </div>
                             <h5>Heavy Metal</h5>
                             <p>Subtitle</p>
                         </div>
                         <div class="copertina">
-                            <img src="img/stranger.jpeg" alt="stranger">
+                            <div class="box-img">
+                                <div class="layover">
+                                    <a href="#"><i class="far fa-play-circle"></i></a>
+                                </div>
+                                <img src="img/stranger.jpeg" alt="stranger">
+                            </div>
                             <h5>Stranger Tings, Vol.1 (a Netflix Original Series Soundtrack)</h5>
                             <p>Kile Dixon & Michael Stein</p>
                         </div>
                         <div class="copertina">
-                            <img src="img/aquietplace.jpeg" alt="place">
+                            <div class="box-img">
+                                <div class="layover">
+                                    <a href="#"><i class="far fa-play-circle"></i></a>
+                                </div>
+                                <img src="img/aquietplace.jpeg" alt="place">
+                            </div>
                             <h5>A Quite Place</h5>
                             <p>Subtitle</p>
                         </div>
                         <div class="copertina">
-                            <img src="img/split.jpeg" alt="split">
+                            <div class="box-img">
+                                <div class="layover">
+                                    <a href="#"><i class="far fa-play-circle"></i></a>
+                                </div>
+                                <img src="img/split.jpeg" alt="split">
+                            </div>
                             <h5>Split</h5>
                             <p>Subtitle</p>
                         </div>
                         <div class="copertina">
-                            <img src="img/cure.jpeg" alt="cure">
+                            <div class="box-img">
+                                <div class="layover">
+                                    <a href="#"><i class="far fa-play-circle"></i></a>
+                                </div>
+                                <img src="img/cure.jpeg" alt="cure">
+                            </div>
                             <h5>A cure for welness</h5>
                             <p>Subtitle</p>
                         </div>
                         <div class="copertina">
-                            <img src="img/sinister.jpeg" alt="sinister">
+                            <div class="box-img">
+                                <div class="layover">
+                                    <a href="#"><i class="far fa-play-circle"></i></a>
+                                </div>
+                                <img src="img/sinister.jpeg" alt="sinister">
+                            </div>
                             <h5>Sinister</h5>
                             <p>Subtitle</p>
                         </div>
@@ -128,6 +172,7 @@
                     <p>Più ascolti, più accurati saranno i suggerimenti.</p>
                     <div class="box-played">
                         <div class="copertina">
+                           
                             <img src="img/radar.jpeg" alt="radar">
                             <h5>Release Radar</h5>
                         </div>

@@ -46,12 +46,19 @@ body {
 .box-nav .logo img {
     width: 70%;
 }
+.logo-small {
+    display: none;
+    width: 100%;
+}
+.logo-small img {
+    width: 100%;
+}
 
 /* fine sezione logo  */
 /* sezione menu  */
 .box-nav .menu {
     width: 230px;
-    
+    margin-top: 20px;
 }
 .row-menu {
     padding-left: 16px;
@@ -79,6 +86,16 @@ body {
     font-size: 12px; 
     font-weight: 700;  
 }
+.icona {
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 20px;
+}
+.icona img {
+    width: 30px;
+    height: 30px;
+}
 /* fine sezione menu  */
 /* sezione playlist  */
 .box-nav .playlist {
@@ -97,7 +114,7 @@ body {
     color: gray;
     font-weight: 500;
 }
-#crea-playlist::before {
+#crea-playlist span::before {
     content: "+";
     background-color: lightgrey;
     color: black;
@@ -106,7 +123,7 @@ body {
     padding: 0 10px;
     margin-right: 5px;
 }
-#crea-playlist::before:hover {
+#crea-playlist:hover span:before{
     background-color: white;
 }
 #crea-playlist:hover {
@@ -114,15 +131,16 @@ body {
 }
 .lista-playlist {
     width: 230px;
-    height: 350px;
-    min-height: 200px;
+    height: 300px;
+    min-height: 150px;
     padding: 0 20px;
+  
 }
 .lista-playlist ul {
     width: 100%;
     height: 150px;
     list-style-type: none;
-    overflow-y: hidden;
+    overflow-y: scroll;
 }
 .nome-playlist {
     padding: 5px 0;
@@ -143,6 +161,7 @@ body {
     width: 230px;
     height: 70px;
     padding: 0 20px;
+  
 }
 .installa a  {
     text-decoration: none;
@@ -150,20 +169,25 @@ body {
     font-size: 12px;
     font-weight: 500;
 }
+.installa a:hover {
+    font-weight: 700;
+    color: white;
+}
 .installa i {
     margin-right: 5px;
 }
 .utente {
+    
     width: 100%;
     height: 50px;
     border-top: 1px solid gray;
     margin-top: 5px;
 }
 .utente img {
-    width: 20px;
-    height: 20px;
-    margin-top: 10px;
-    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+
+   
 }
 .utente a {
     display: flex;
@@ -172,6 +196,16 @@ body {
     color: white;
     font-size: 15px;
     font-weight: 700;
+    margin-top: 10px;
+}
+.utente .user-avatar {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: lightgrey;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
 }
 /* fine sezione botton navigazione */
 /* fine barra sx navigazione */
@@ -240,21 +274,52 @@ body {
 .box-played {
     display: flex;
     justify-content: flex-start;
-    flex-wrap: wrap;
     width: 100%;
     margin-bottom: 10px;
+   
 }
+
 .copertina {
+   
     width: calc((100% / 6) - 20px);
     margin-right: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
 
+
 }
 .copertina img {
     width: 100%;
     margin-bottom: 10px;
+}
+.box-img {
+    position: relative; 
+    width: 100%;
+  
+}
+.layover {
+    display: none;
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);  
+}
+.box-img:hover .layover{
+    display: inline;
+}
+.layover a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+
+}
+.layover a i {
+    color: white;
+    font-size: 30px;
+
 }
 .box-main p {
     color: gray;
@@ -379,19 +444,50 @@ body {
         min-height: 100%;
     } */
     .box-nav,
+    .box-nav-top,
     .box-nav .logo,
     .box-nav .menu, 
     .box-nav .playlist,
     .box-nav .nav-bottom {
         width: 70px;
     }
-    .box-main {
+    .box-main,
+    .barra-top {
         width: calc(100% - 70px) ;
     }
 
-    .nome-logo,
-    .row-menu a:last-child {
+    #nome-logo,
+    .row-menu,
+    .playlist,
+    .lista-playlist,
+    .installa,
+    .utente {
         display: none;
+    }
+    .logo-small,
+    .icona {
+        display: inline;
+    }
+
+}
+
+@media screen and (max-width: 980px) {
+    .box-played {
+        flex-wrap: wrap;
+    }
+
+    .copertina {
+        width: calc((100% / 4) - 20px);
+    }
+
+}
+@media screen and (max-width: 780px) {
+    .box-played {
+        flex-wrap: wrap;
+    }
+
+    .copertina {
+        width: calc((100% / 2) - 20px);
     }
 
 }
