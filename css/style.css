@@ -57,7 +57,6 @@ body {
     padding-left: 16px;
     width: 100%;
     height: 30px;
-    margin-left: 3px;
     margin-bottom: 5px;
 }
 .row-menu:hover {
@@ -77,7 +76,8 @@ body {
     align-items: center;
     text-decoration: none;
     color: gray;
-    font-size: 12px;   
+    font-size: 12px; 
+    font-weight: 700;  
 }
 /* fine sezione menu  */
 /* sezione playlist  */
@@ -130,6 +130,7 @@ body {
 .nome-playlist a{ 
     text-decoration: none;
     font-size: 12px;
+    font-weight: 700;
     color: gray;
 }
 .nome-playlist a:hover {
@@ -177,10 +178,11 @@ body {
 /* sezione main  */
 .box-main {
     width: calc(100% - 230px);
-    height: 719px;
+    height: 100%;
     background-color: rgb(20, 25, 34);
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 90px;
 }
 .barra-top {
     width: calc(100% - 230px);
@@ -192,12 +194,11 @@ body {
 }
 /* sezione menu top main  */
 .menu-top-main {
-    width: 60%;
-    margin: 0 auto;
+    width: 100%;
     padding-top: 90px;
     padding-bottom: 20px;
     text-align: center;
-    background-color: darkgray;
+  
 }
 .menu-top-main ul {
     list-style: none;
@@ -215,17 +216,20 @@ body {
     font-size: 12px;
     text-decoration: none;
 }
+/* fine sezione menu top main  */
+/* sezione played */
 .box-played {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
     width: 100%;
-    background-color: darkseagreen;
-   
+    margin-bottom: 10px;
 }
 .copertina {
     width: calc((100% / 6) - 20px);
-    margin: 20px 0;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     text-align: center;
 
 }
@@ -233,7 +237,17 @@ body {
     width: 100%;
     margin-bottom: 10px;
 }
-/* fine sezione menu top main  */
+.box-main p {
+    color: gray;
+    font-weight: 700;
+    font-size: 10px;
+    padding-top: 10px;
+}
+.artisti-pop img {
+    border-radius: 50%;
+
+}
+/* fine sezione played  */
 /* fine sezione main  */
 /* sezione footer  */
 .box-footer {
