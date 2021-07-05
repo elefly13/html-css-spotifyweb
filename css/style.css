@@ -184,7 +184,11 @@ body {
     padding-right: 20px;
     padding-bottom: 90px;
 }
+/* sezione barra top main  */
 .barra-top {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     width: calc(100% - 230px);
     height: 70px;
     background-color: rgba(1, 1, 1, 0.5);
@@ -192,6 +196,21 @@ body {
     top: 0;
     right: 0;
 }
+.barra-top .btn a {
+    display: inline-block;
+    width: 180px;
+    height: 35px;
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 35px;
+    border: 1px solid white;
+    border-radius: 20px;
+    text-align: center;
+    margin-right: 5px;
+}
+/* fine sezione barra top main */
 /* sezione menu top main  */
 .menu-top-main {
     width: 100%;
