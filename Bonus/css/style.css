@@ -245,6 +245,13 @@ body {
     text-align: center;
     margin-right: 5px;
 }
+.btn a {
+    transition: 1s;
+}
+.btn a:hover {
+    transform: scale(1.1);
+}
+
 
 /* fine sezione barra top main */
 /* sezione menu top main  */
