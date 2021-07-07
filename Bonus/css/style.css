@@ -416,6 +416,10 @@ body {
 }
 #play {
    font-size: 25px;
+   transition: 1s;
+}
+#play:hover {
+    transform: scale(1.1);
 }
 .volume-centrale {
     display: flex;
@@ -512,6 +516,8 @@ body {
     .barra-top {
         display: none;
     }
-    
+    .menu-top-main {
+        padding-top: 30px;
+    }
 }
 /* fine Media  */
